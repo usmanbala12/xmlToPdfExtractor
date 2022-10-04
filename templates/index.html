@@ -1,0 +1,11 @@
+<H1 align="center">html2fpdf</H1>
+<center>
+</center>
+<table border="1" align="center" width="100%">
+<thead><tr><th width="40%">Name</th><th width="60%">Value</th></tr></thead>
+<tbody>
+    {% for field in fields %}
+        <tr><td>{{ field['@TYPE'] }}</td><td>{{ field['#text'] }}</td></tr>
+    {% endfor %}
+</tbody>
+</table>
